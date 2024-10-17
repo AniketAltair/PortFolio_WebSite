@@ -1,0 +1,176 @@
+.container-projects-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: 680px;
+    
+}
+
+.header-projects-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-title-projects-1 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.header-role-projects-1 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 22px;
+}
+
+.header-img-projects-1 {
+    width: 70px;
+    height: 70px;
+    background-image: url('logo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+    animation: rotate-left-right 0.5s infinite;
+}
+
+@keyframes rotate-left-right {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+
+.letter-projects-1 {
+    color: black;
+    display: inline-block;
+    animation: changeColor-projects-1 2s linear infinite;
+    animation-delay: calc(var(--i) * 0.5s);
+}
+
+
+@keyframes changeColor-projects-1 {
+    0%, 100% {
+        color: black;
+    }
+    50% {
+        color: lawngreen;
+    }
+}
+
+
+.letter-projects-1:nth-child(1) {
+    --i: 0;
+}
+.letter-projects-1:nth-child(2) {
+    --i: 1;
+}
+.letter-projects-1:nth-child(3) {
+    --i: 2;
+}
+.letter-projects-1:nth-child(4) {
+    --i: 3;
+}
+.letter-projects-1:nth-child(5) {
+    --i: 4;
+}
+.letter-projects-1:nth-child(6) {
+    --i: 5;
+}
+.letter-projects-1:nth-child(7) {
+    --i: 6;
+}
+.letter-projects-1:nth-child(8) {
+    --i: 7;
+}
+.letter-projects-1:nth-child(9) {
+    --i: 8;
+}
+.letter-projects-1:nth-child(10) {
+    --i: 9;
+}
+.letter-projects-1:nth-child(11) {
+    --i: 10;
+}
+ 
+
+.gif-component-projects-1 {
+    margin: 10px 0 0 0;
+    
+}
+
+.website-link-projects-1{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.linkedin-link-projects-1 {
+    
+    font-size: 15px;
+}
+
+a{
+    color: maroon;
+}
+
+h3{
+    font-size: 20px;
+    color: rgb(173, 12, 12);
+    font-family: cursive;
+}
+
+.introduction-projects-1, .goals-projects-1, .achievements-projects-1, .customers-projects-1 {
+    font-size: 15px;
+    text-align: left;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.introduction-projects-1 ul, .goals-projects-1 ul, .achievements-projects-1 ul {
+    list-style-type: none; 
+    margin-left: 0; 
+    padding: 0; 
+}
+
+.introduction-projects-1 li, .goals-projects-1 li, .achievements-projects-1 li {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 5px; 
+    color: #ff5823;
+    font-family: cursive;
+}
+
+.introduction-projects-1 li svg, .goals-projects-1 li svg, .achievements-projects-1 li svg {
+    margin-right: 8px; 
+}
+
+
+.customers-projects-1 img {
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+    margin: 20px 0 10px 20px;
+}
+.customers-dot-projects-1{
+    font-size: 30px;
+    margin: 65px 0 0 10px;
+}
+
+.customer-images-projects-1{
+    display: flex;
+    flex-direction: row;
+}

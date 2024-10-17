@@ -1,0 +1,191 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    width: 680px;
+    
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.header-title {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.header-role {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 22px;
+}
+
+.header-img {
+    width: 70px;
+    height: 70px;
+    background-image: url('Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.letter {
+    color: black;
+    display: inline-block;
+    animation: changeColor 2s linear infinite;
+    animation-delay: calc(var(--i) * 0.5s);
+}
+
+
+@keyframes changeColor {
+    0%, 100% {
+        color: black;
+    }
+    50% {
+        color: red;
+    }
+}
+
+
+.letter:nth-child(1) {
+    --i: 0;
+}
+.letter:nth-child(2) {
+    --i: 1;
+}
+.letter:nth-child(3) {
+    --i: 2;
+}
+.letter:nth-child(4) {
+    --i: 3;
+}
+.letter:nth-child(5) {
+    --i: 4;
+}
+.letter:nth-child(6) {
+    --i: 5;
+}
+.letter:nth-child(7) {
+    --i: 6;
+}
+.letter:nth-child(8) {
+    --i: 7;
+}
+.letter:nth-child(9) {
+    --i: 8;
+}
+.letter:nth-child(10) {
+    --i: 9;
+}
+.letter:nth-child(11) {
+    --i: 10;
+}
+ 
+
+.gif-component {
+    margin: 10px 0 0 100px;
+    border-radius: 10px;
+}
+
+.website-link{
+    margin-top: 10px;
+    margin-left: 130px;
+    font-size: 15px;
+    color: black;
+}
+.linkedin-link {
+    color: black;
+    font-size: 15px;
+    margin-left: 130px;
+}
+
+a{
+    color: black;
+}
+
+.introduction,.goals, .achievements, .customers {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px; 
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 
+                0 2px 15px rgba(0, 0, 0, 0.2); 
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+ 
+.introduction:hover , .goals:hover, .achievements:hover, .customers:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15), 
+                0 4px 20px rgba(0, 0, 0, 0.3); 
+  }
+
+.introduction h3,.goals h3,.achievements h3,.customers h3{
+    font-size: 20px;
+    color: black;
+    font-family: cursive;
+}
+
+.introduction, .goals, .achievements, .customers {
+    font-size: 15px;
+    text-align: left;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.introduction ul, .goals ul, .achievements ul {
+    list-style-type: none; 
+    margin-left: 0;
+    padding: 0; 
+}
+
+.introduction li, .goals li, .achievements li {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 5px; 
+    color: red;
+    font-family: cursive;
+}
+
+.introduction li svg, .goals li svg, .achievements li svg {
+    margin-right: 8px; 
+}
+
+
+.customers img {
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+    margin: 20px 0 10px 20px;
+}
+.customers-dot{
+    font-size: 30px;
+    margin: 65px 0 0 10px;
+}
+
+.customer-images{
+    display: flex;
+    flex-direction: row;
+}

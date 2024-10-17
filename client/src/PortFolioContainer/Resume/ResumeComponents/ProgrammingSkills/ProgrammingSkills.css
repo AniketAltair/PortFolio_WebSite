@@ -1,0 +1,156 @@
+.main-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img-container {
+    margin: 20px 10px 0 20px;
+    width: 100px;                /* Set width to 100px */
+    height: 100px;               /* Set height to 100px */
+    overflow: hidden;            /* Hide overflow if any */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    position: relative;          /* Required for positioning the progress bar */
+}
+
+.img-container:hover {
+    transform: scale(1.5);       /* Scale up by 10% on hover */
+}
+
+
+
+.progress-container {
+    width: 75%;  
+    margin-top: 5px; 
+    margin-left: 23px; 
+    margin-bottom: 10px;            /* Full width container */
+    background-color: #f3f3f3;   /* Light background for the container */
+    border-radius: 25px;         /* Rounded corners */
+    height: 10px;                /* Set height of progress container */
+    position: relative;          /* For positioning the progress bar */
+    overflow: hidden;            /* Prevent the bar from overflowing */
+  }
+  
+  .progress-bar {
+    height: 10px; /* Adjust as per your design */
+    background-color: #4caf50; /* Change this color as per your design */
+    border-radius: 25px; /* Adjust for rounded corners */
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .img-container:hover + .progress-container .progress-bar {
+    width: 75%;                  /* Expand to 75% width on hover */
+  }
+
+  .progress-text {
+    position: absolute;
+    top: 50%;                  /* Vertical center */
+    left: 50%;                 /* Horizontal center */
+    transform: translate(-50%, -50%); /* Adjust position to be exactly in the middle */
+    font-size: 8px;           /* Font size of the text */
+    color: black;               /* White color for good contrast */
+    font-weight: bold;         /* Bold font for emphasis */
+  }
+
+  .nameNotVisible{
+    display: none;
+  }
+
+  .skillName{
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+    font-family: cursive;
+    font-size: 15px;
+    color: green;
+    animation: wobble 1s ease-in-out infinite;
+  }
+
+  @keyframes wobble {
+    0% { transform:  rotate(0deg); }
+    25% { transform:  rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform:  rotate(-5deg); }
+    100% { transform:  rotate(5deg); }
+  }
+
+
+  @media screen and (max-width: 1110px) {
+    
+    
+  }
+
+  @media screen and (max-width: 810px) {
+
+    .img-container {
+      margin: 20px 10px 0 20px;
+      width: 50px;                /* Set width to 100px */
+      height: 50px;               /* Set height to 100px */
+      overflow: hidden;            /* Hide overflow if any */
+      transition: transform 0.3s ease; /* Smooth transition for scaling */
+      position: relative;          /* Required for positioning the progress bar */
+  }
+
+  .progress-container {
+    width: 75%;  
+    margin-top: 5px; 
+    margin-left: 23px; 
+    margin-bottom: 10px;            /* Full width container */
+    background-color: #f3f3f3;   /* Light background for the container */
+    border-radius: 25px;         /* Rounded corners */
+    height: 10px;                /* Set height of progress container */
+    position: relative;          /* For positioning the progress bar */
+    overflow: hidden;            /* Prevent the bar from overflowing */
+  }
+
+  .skillName{
+    justify-content: center;
+    align-items: center;
+    margin-left: 32.5px;
+    font-family: cursive;
+    font-size: 7.5px;
+    color: green;
+    animation: wobble 1s ease-in-out infinite;
+  }
+    
+  }
+
+  @media screen and (max-width: 375px) {
+
+    .img-container {
+      margin: 20px 10px 0 20px;
+      width: 50px;                /* Set width to 100px */
+      height: 50px;               /* Set height to 100px */
+      overflow: hidden;            /* Hide overflow if any */
+      transition: transform 0.3s ease; /* Smooth transition for scaling */
+      position: relative;          /* Required for positioning the progress bar */
+  }
+
+  .progress-container {
+    width: 75%;  
+    margin-top: 5px; 
+    margin-left: 23px; 
+    margin-bottom: 10px;            /* Full width container */
+    background-color: #f3f3f3;   /* Light background for the container */
+    border-radius: 25px;         /* Rounded corners */
+    height: 10px;                /* Set height of progress container */
+    position: relative;          /* For positioning the progress bar */
+    overflow: hidden;            /* Prevent the bar from overflowing */
+  }
+
+  .skillName{
+    justify-content: center;
+    align-items: center;
+    margin-left: 32.5px;
+    font-family: cursive;
+    font-size: 7.5px;
+    color: green;
+    animation: wobble 1s ease-in-out infinite;
+  }
+
+
+  }
+  
+
+
+  
