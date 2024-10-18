@@ -61,3 +61,29 @@ li {
     margin-top: 5px;
     text-align: center;
 }
+
+.interests-images-fitness,.interests-images-travel {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    padding: 10px;
+}
+
+.interests-images-fitness img {
+    margin: 10px 10px 10px 10px; /* Space between images */
+    width: 150px;
+    height: 200px; /* Adjust height as necessary */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    border: 2px solid black;
+}
+
+.interests-images-travel img {
+    margin: 10px 10px 10px 10px; /* Space between images */
+    width: 200px;
+    height: 200px; /* Adjust height as necessary */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    border: 2px solid black;
+}
+
+.interests-images-fitness img:hover,.interests-images-travel img:hover{
+    transform: scale(1.5); /* Scale up image on hover */
+}

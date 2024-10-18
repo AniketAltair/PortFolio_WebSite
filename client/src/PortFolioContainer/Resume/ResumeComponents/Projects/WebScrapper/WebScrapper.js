@@ -21,13 +21,13 @@ export default function WebScrapper() {
   return (
     <div className='container-projects-3'>
       <div className='header-projects-3'>
-        
-        {titleComponent()}
         <Link to="/mlproject" className='next-button-project-3'>
           <div className='circle-button-3'>
             <ArrowBackIosRoundedIcon>&lt; Back</ArrowBackIosRoundedIcon>
           </div>
         </Link>
+        {titleComponent()}
+        
       </div>
 
       {/* GIF Component */}

@@ -22,13 +22,12 @@ export default function PiggyBank() {
   return (
     <div className='container-projects-2'>
       <div className='header-projects-2'>
-        
-        {titleComponent()}
         <Link to="/piggybank" className='prev-button-project-2'>
           <div className="circle-button-2-prev">
           <ArrowBackIosRoundedIcon>Next &gt;</ArrowBackIosRoundedIcon>
           </div>
         </Link>
+        {titleComponent()}
         <Link to="/webscrapper" className='next-button-project-2'>
           <div className="circle-button-2-next">
           <ArrowForwardIosRoundedIcon>Prev &gt;</ArrowForwardIosRoundedIcon>
