@@ -112,7 +112,7 @@ export default function ProgrammingSkills() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
-    const bars = document.querySelectorAll('.progress-bar');
+    const bars = document.querySelectorAll('.prog-skills-progress-bar');
     
     bars.forEach(bar => {
       bar.style.width = '0%'; 
@@ -130,7 +130,7 @@ export default function ProgrammingSkills() {
   const handleMouseOver = (index) => {
     setIsSelected(true);
     setHoveredIndex(index);
-    const bar = document.querySelectorAll('.progress-bar')[index];
+    const bar = document.querySelectorAll('.prog-skills-progress-bar')[index];
     if (bar) {
       bar.style.width = '0%';
       setTimeout(() => {
@@ -142,18 +142,18 @@ export default function ProgrammingSkills() {
   const handleMouseOut = (index) => {
     setIsSelected(false);
     setHoveredIndex(null);
-    const bar = document.querySelectorAll('.progress-bar')[index];
+    const bar = document.querySelectorAll('.prog-skills-progress-bar')[index];
     if (bar) {
       bar.style.width = programmingSkills[index].percentProgress; // Reset to original percentage on mouse out
     }
   };
 
   return (
-    <div className='main-container'>
+    <div className='prog-skills-main-container'>
       {programmingSkills.map((item, index) => (
         <div key={index}>
           <div 
-            className='img-container' 
+            className='prog-skills-img-container' 
             onMouseOver={() => handleMouseOver(index)}
             onMouseOut={() => handleMouseOut(index)}
                   
@@ -165,19 +165,19 @@ export default function ProgrammingSkills() {
             />
           </div>
           
-          <div className="progress-container">
+          <div className="prog-skills-progress-container">
             <div 
-              className="progress-bar" 
+              className="prog-skills-progress-bar" 
               style={{
                 width: '0%', // Start with 0% width
                 transition: 'width 0.5s ease-in-out' // Add smooth transition
               }}
             ></div>
-            <div className="progress-text">
+            <div className="prog-skills-progress-text">
               {item.percentProgress}
             </div>
           </div>
-          <div className='skillName'>{item.name}</div>
+          <div className='prog-skills-skillName'>{item.name}</div>
         </div>
       ))}
     </div>

@@ -1,11 +1,12 @@
-.main-container{
+.prog-skills-main-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.img-container {
-    margin: 20px 10px 0 20px;
+
+.prog-skills-img-container {
+    margin: 10px 10px 0 20px;
     width: 100px;                /* Set width to 100px */
     height: 100px;               /* Set height to 100px */
     overflow: hidden;            /* Hide overflow if any */
@@ -13,13 +14,13 @@
     position: relative;          /* Required for positioning the progress bar */
 }
 
-.img-container:hover {
+.prog-skills-img-container:hover {
     transform: scale(1.5);       /* Scale up by 10% on hover */
 }
 
 
 
-.progress-container {
+.prog-skills-progress-container {
     width: 75%;  
     margin-top: 5px; 
     margin-left: 23px; 
@@ -31,18 +32,18 @@
     overflow: hidden;            /* Prevent the bar from overflowing */
   }
   
-  .progress-bar {
+  .prog-skills-progress-bar {
     height: 10px; /* Adjust as per your design */
     background-color: #4caf50; /* Change this color as per your design */
     border-radius: 25px; /* Adjust for rounded corners */
     transition: width 0.5s ease-in-out;
   }
   
-  .img-container:hover + .progress-container .progress-bar {
+  .prog-skills-img-container:hover + .prog-skills-progress-container .prog-skills-progress-bar {
     width: 75%;                  /* Expand to 75% width on hover */
   }
 
-  .progress-text {
+  .prog-skills-progress-text {
     position: absolute;
     top: 50%;                  /* Vertical center */
     left: 50%;                 /* Horizontal center */
@@ -56,7 +57,7 @@
     display: none;
   }
 
-  .skillName{
+  .prog-skills-skillName{
     justify-content: center;
     align-items: center;
     margin-left: 45px;
