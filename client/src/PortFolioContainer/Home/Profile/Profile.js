@@ -3,6 +3,16 @@ import {Typewriter} from 'react-simple-typewriter';
 import './Profile.css'
 
 export default function Profile() {
+
+    const handleScrollToContectMe = () =>{
+
+        let screenComponent = document.getElementById("ContactMe");
+        if(!screenComponent){
+            return;
+        }
+        screenComponent.scrollIntoView({behavior:"smooth"});
+    } 
+
   return (
     <div className='profile-container'>
         <div className='profile-parent'>
@@ -58,7 +68,7 @@ export default function Profile() {
                 </div>
 
                 <div className='profile-options'>
-                    <button className='btn primary-btn'>
+                    <button className='btn primary-btn' onClick={()=>handleScrollToContectMe()}>
                         {""}
                         Hire Me{" "}
                     </button>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { GET_SCREEN_INDEX, TOTAL_SCREENS } from '../../../utilities/commonUtils';
 import ScrollService from '../../../utilities/ScrollService';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -43,14 +43,21 @@ export default function Header() {
     }
 
     const switchScreen = (index,screen) =>{
+        console.log("inside switch screen");
         let screenComponent = document.getElementById(screen.screen_name);
-        if(!screenComponent)
+        if(!screenComponent){
+            setSelectedScreen(0);
             return;
+        }
 
         screenComponent.scrollIntoView({behavior:"smooth"});
         setSelectedScreen(index);
         setShowHeaderOptions(false);
     }
+
+    useEffect(()=>{
+        console.log("selectedScreen "+selectedScreen);
+    },[selectedScreen]);
 
     return (
         <div>
