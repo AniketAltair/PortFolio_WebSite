@@ -76,79 +76,47 @@
   }
 
 
-  @media screen and (max-width: 1110px) {
-    
+  @media screen and (max-width: 850px) {
+    .prog-skills-img-container{
+      width: 85px;
+      height: 85px;
+    }
     
   }
 
-  @media screen and (max-width: 810px) {
+  @media screen and (max-width: 466px) {
 
-    .img-container {
-      margin: 20px 10px 0 20px;
-      width: 50px;                /* Set width to 100px */
-      height: 50px;               /* Set height to 100px */
+    .prog-skills-img-container {
+      margin: 10px 10px 0 20px;
+      width: 65px;                /* Set width to 100px */
+      height: 65px;               /* Set height to 100px */
       overflow: hidden;            /* Hide overflow if any */
       transition: transform 0.3s ease; /* Smooth transition for scaling */
       position: relative;          /* Required for positioning the progress bar */
   }
+  
 
-  .progress-container {
-    width: 75%;  
-    margin-top: 5px; 
-    margin-left: 23px; 
-    margin-bottom: 10px;            /* Full width container */
-    background-color: #f3f3f3;   /* Light background for the container */
-    border-radius: 25px;         /* Rounded corners */
-    height: 10px;                /* Set height of progress container */
-    position: relative;          /* For positioning the progress bar */
-    overflow: hidden;            /* Prevent the bar from overflowing */
-  }
+    .prog-skills-progress-container {
+      width: 60%;  
+      margin-top: 5px; 
+      margin-left: 23px; 
+      margin-bottom: 10px;            /* Full width container */
+      background-color: #f3f3f3;   /* Light background for the container */
+      border-radius: 25px;         /* Rounded corners */
+      height: 10px;                /* Set height of progress container */
+      position: relative;          /* For positioning the progress bar */
+      overflow: hidden;            /* Prevent the bar from overflowing */
+    }
 
-  .skillName{
-    justify-content: center;
-    align-items: center;
-    margin-left: 32.5px;
-    font-family: cursive;
-    font-size: 7.5px;
-    color: green;
-    animation: wobble 1s ease-in-out infinite;
-  }
-    
-  }
-
-  @media screen and (max-width: 375px) {
-
-    .img-container {
-      margin: 20px 10px 0 20px;
-      width: 50px;                /* Set width to 100px */
-      height: 50px;               /* Set height to 100px */
-      overflow: hidden;            /* Hide overflow if any */
-      transition: transform 0.3s ease; /* Smooth transition for scaling */
-      position: relative;          /* Required for positioning the progress bar */
-  }
-
-  .progress-container {
-    width: 75%;  
-    margin-top: 5px; 
-    margin-left: 23px; 
-    margin-bottom: 10px;            /* Full width container */
-    background-color: #f3f3f3;   /* Light background for the container */
-    border-radius: 25px;         /* Rounded corners */
-    height: 10px;                /* Set height of progress container */
-    position: relative;          /* For positioning the progress bar */
-    overflow: hidden;            /* Prevent the bar from overflowing */
-  }
-
-  .skillName{
-    justify-content: center;
-    align-items: center;
-    margin-left: 32.5px;
-    font-family: cursive;
-    font-size: 7.5px;
-    color: green;
-    animation: wobble 1s ease-in-out infinite;
-  }
-
+    .prog-skills-skillName{
+      justify-content: center;
+      align-items: center;
+      margin-left: 25px;
+      font-family: cursive;
+      font-size: 15px;
+      color: green;
+      animation: wobble 1s ease-in-out infinite;
+    }
 
   }
   

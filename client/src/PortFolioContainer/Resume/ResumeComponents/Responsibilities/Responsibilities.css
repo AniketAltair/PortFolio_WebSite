@@ -57,7 +57,48 @@ li {
     text-align: center;
 }
 
+.video-container iframe{
+    width: 300px;
+    height: 400px;
+}
+
 .image-container {
     margin-top: 5px;
     text-align: center;
+}
+
+
+
+@media only screen and (max-width:850px){
+    
+    .responsibility-container .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        width: 450px;
+        transition: transform 0.3s ease;
+        border: 2px solid black;
+    }
+    
+}
+
+@media only screen and (max-width:466px){
+
+    .responsibility-container .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        width: 300px;
+        transition: transform 0.3s ease;
+        border: 2px solid black;
+    }
+
+    .video-container iframe{
+        width: 200px;
+        height: 300px;
+    }
+    
+
 }

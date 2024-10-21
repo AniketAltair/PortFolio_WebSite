@@ -61,7 +61,7 @@ export default function InterestsAndHobbies () {
     ];
 
     return (
-        <div className="responsibility-container">
+        <div className="interests-container">
             {responsibilities.map((item, index) => (
                 <div className="card" key={index}>
                     <div className="card-header">

@@ -32,7 +32,7 @@ export default function WebScrapper() {
 
       {/* GIF Component */}
       <div className='gif-component-projects-3'>
-        <img src="https://miro.medium.com/v2/resize:fit:1024/1*nHfayfdmxAApbg84iMrJqQ.gif" alt="Running GIF" style={{height:200,width:400,borderRadius:5}}/>
+        <img src="https://miro.medium.com/v2/resize:fit:1024/1*nHfayfdmxAApbg84iMrJqQ.gif" alt="Running GIF" />
       </div>
 
       {/* LinkedIn Link */}
@@ -44,8 +44,8 @@ export default function WebScrapper() {
       <div className='introduction-projects-3'>
         <h3><u>Introduction</u></h3>
         <ul>
-          <li><LabelImportantRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />We are a startup focused on innovation.</li>
-          <li><LabelImportantRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Building solutions that matter.</li>
+          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='webscrapper-bullet'/>We are a startup focused on innovation.</li>
+          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='webscrapper-bullet'/>Building solutions that matter.</li>
         </ul>
       </div>
 
@@ -53,8 +53,8 @@ export default function WebScrapper() {
       <div className='features-projects-3'>
         <h3><u>Features</u></h3>
         <ul>
-          <li><LabelImportantRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Creating meaningful impact.</li>
-          <li><LabelImportantRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Building long-term relationships with clients.</li>
+          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='webscrapper-bullet'/>Creating meaningful impact.</li>
+          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='webscrapper-bullet'/>Building long-term relationships with clients.</li>
         </ul>
       </div>
 

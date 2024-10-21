@@ -25,7 +25,7 @@ export default function Testimonial(props) {
         items: 1,
       },
       768: {
-        items: 1,
+        items: 2,
       },
       1000: {
         items: 3,

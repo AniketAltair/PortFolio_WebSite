@@ -37,7 +37,7 @@ export default function PiggyBank() {
 
       {/* GIF Component */}
       <div className='gif-component-projects-2'>
-        <img src="https://cdn.pixabay.com/animation/2023/01/22/07/18/07-18-28-799_512.gif" alt="Running GIF" style={{height:200,width:400,borderRadius:5}}/>
+        <img src="https://cdn.pixabay.com/animation/2023/01/22/07/18/07-18-28-799_512.gif" alt="Running GIF" className=''/>
       </div>
 
      
@@ -51,8 +51,8 @@ export default function PiggyBank() {
       <div className='introduction-projects-2'>
         <h3><u>Introduction</u></h3>
         <ul>
-          <li><LabelImportantRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />We are a startup focused on innovation.</li>
-          <li><LabelImportantRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Building solutions that matter.</li>
+          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='mlproj-bullet'/>We are a startup focused on innovation.</li>
+          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='mlproj-bullet'/>Building solutions that matter.</li>
         </ul>
       </div>
 
@@ -60,8 +60,8 @@ export default function PiggyBank() {
       <div className='features-projects-2'>
         <h3><u>Features</u></h3>
         <ul>
-          <li><LabelImportantRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Creating meaningful impact.</li>
-          <li><LabelImportantRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Building long-term relationships with clients.</li>
+          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='mlproj-bullet'/>Creating meaningful impact.</li>
+          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='mlproj-bullet'/>Building long-term relationships with clients.</li>
         </ul>
       </div>
 

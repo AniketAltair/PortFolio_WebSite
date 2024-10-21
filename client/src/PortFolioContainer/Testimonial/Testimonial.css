@@ -129,7 +129,7 @@
         background-color: white;
         border-radius: 30px; /* Rounded corners */
         padding: 20px; /* Padding inside the card */
-        height: 250px; /* Automatically adjust height */
+        height: 300px; /* Automatically adjust height */
         width: 300px; /* Increase card width */
         margin: 20px auto; /* Space between cards and center them */
         

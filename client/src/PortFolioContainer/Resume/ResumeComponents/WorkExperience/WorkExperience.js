@@ -33,7 +33,8 @@ const WorkExperience = () => {
       responsibilities:[
         "Worked on Writting Component test cases using Mockhito and Junit",
       ],
-      logoImg:"https://media.licdn.com/dms/image/v2/D560BAQE1-h_PeyRIYw/company-logo_200_200/company-logo_200_200/0/1685679708968/wisetech_global_logo?e=2147483647&v=beta&t=zTf3iCaKP4W5fyukyGUmRHeOLMNVnn0pvX13tiYrCKk"
+      logoImg:"https://media.licdn.com/dms/image/v2/D560BAQE1-h_PeyRIYw/company-logo_200_200/company-logo_200_200/0/1685679708968/wisetech_global_logo?e=2147483647&v=beta&t=zTf3iCaKP4W5fyukyGUmRHeOLMNVnn0pvX13tiYrCKk",
+      companyLink:"https://www.wisetechglobal.com/"
     },
     {
       index: 1,
@@ -47,7 +48,8 @@ const WorkExperience = () => {
         "Fixed bugs on production environment",
         "Participated in daily scrum meetings"
       ],
-      logoImg:"https://play-lh.googleusercontent.com/3Te50YzAdUfSsdnfmW5qrItF8yLZrvZc8qwDdQl0SjfudJbOiKLgs6S8kn9ANcjDUQ=w240-h480-rw"
+      logoImg:"https://play-lh.googleusercontent.com/3Te50YzAdUfSsdnfmW5qrItF8yLZrvZc8qwDdQl0SjfudJbOiKLgs6S8kn9ANcjDUQ=w240-h480-rw",
+      companyLink:"https://www.blumeglobal.com/"
     },
     {
       index: 2,
@@ -59,7 +61,8 @@ const WorkExperience = () => {
       responsibilities:[
         ""
       ],
-      logoImg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxvd9U7fZfK_xINM7ZAgjHubJ6J8lfYKVfHg&s"
+      logoImg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxvd9U7fZfK_xINM7ZAgjHubJ6J8lfYKVfHg&s",
+      companyLink:"https://www.linkedin.com/company/mealful/"
     }
   ];
 
@@ -105,7 +108,9 @@ const WorkExperience = () => {
         <TimelineContent>
           {visibleBoxes[item.index] && (
             <Box className="box">
-              <span><img src={item.logoImg} style={{width:25,height:25,marginRight:5}}/></span><u className='company'><strong>{item.companyName}</strong></u>
+              <a href={item.companyLink} style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>
+                <span><img src={item.logoImg} style={{width:25,height:25,marginRight:5}}/></span><u className='company'><strong>{item.companyName}</strong></u>
+              </a>
               <div className='position'>{item.position}</div>
               <div className='duration'>{item.from + " - " + item.to}</div>
               <div onClick={() => onLinkClick(item.index)} className={isBold?"responsibilities-bold":"responsibilities"}>Responsibilities</div>

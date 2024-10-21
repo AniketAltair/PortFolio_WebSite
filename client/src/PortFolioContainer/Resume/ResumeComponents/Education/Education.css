@@ -1,4 +1,4 @@
-.responsibility-container {
+.education-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -7,7 +7,7 @@
   padding: 20px;
 }
 
-.card {
+.education-card {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
@@ -17,17 +17,17 @@
   border: 2px solid black;
 }
 
-.card:hover {
+.education-card:hover {
   transform: translateY(-5px);
 }
 
-.card-header {
+.education-card-header {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.logo {
+.education-logo {
   width: 40px;
   height: 40px;
   margin-right: 15px;
@@ -52,12 +52,12 @@ li {
   color: #333;
 }
 
-.video-container {
+.education-video-container {
   margin-top: 5px;
   text-align: center;
 }
 
-.image-container {
+.education-image-container {
   margin-top: 5px;
   text-align: center;
 }
@@ -83,4 +83,87 @@ li {
 .education-bold {
   color: #ff5823; /* Orange color */
   animation: pulse 3s infinite; /* Apply the pulsing animation */
+}
+
+@media only screen and (max-width:850px) {
+
+  .education-card {
+    border-radius: 5px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 460px;
+    transition: transform 0.3s ease;
+    border: 2px solid black;
+  }
+
+
+  .education-card h3 {
+    margin: 0;
+    font-size: 17px;
+    color: black;
+  }
+
+  .education-card li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #333;
+  }
+
+}
+
+@media only screen and (max-width:466px) {
+
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    height: 500px;
+  }
+
+  .education-card {
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+    border: 2px solid black;
+  }
+
+
+  .education-card h3 {
+    margin: 0;
+    font-size: 12px;
+    color: black;
+  }
+
+  .education-card li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    font-size: 10px;
+    color: #333;
+  }
+
+  @keyframes pulse {
+    0% {
+      font-size: 0.8em;
+    }
+    50% {
+      font-size: 1em; /* Increase font size at the midpoint */
+    }
+    100% {
+      font-size: 0.8em; /* Return to original size */
+    }
+  }
+  
+  .education-bold {
+    color: #ff5823; /* Orange color */
+    animation: pulse 3s infinite; /* Apply the pulsing animation */
+  }
+  
+
 }

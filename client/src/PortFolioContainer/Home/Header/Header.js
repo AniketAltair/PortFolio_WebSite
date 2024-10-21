@@ -43,7 +43,6 @@ export default function Header() {
     }
 
     const switchScreen = (index,screen) =>{
-        console.log("inside switch screen");
         let screenComponent = document.getElementById(screen.screen_name);
         if(!screenComponent){
             setSelectedScreen(0);
@@ -56,7 +55,6 @@ export default function Header() {
     }
 
     useEffect(()=>{
-        console.log("selectedScreen "+selectedScreen);
     },[selectedScreen]);
 
     return (

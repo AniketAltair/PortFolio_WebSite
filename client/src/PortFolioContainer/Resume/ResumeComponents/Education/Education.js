@@ -1,5 +1,5 @@
 import React from 'react';
-import './Education.css'; // Importing CSS
+import './Education.css';
 import SchoolIcon from '@mui/icons-material/School';
 
 export default function Education () {
@@ -32,16 +32,16 @@ export default function Education () {
     ];
 
     return (
-        <div className="responsibility-container">
+        <div className="education-container">
             {responsibilities.map((item, index) => (
-                <div className="card" key={index}>
-                    <div className="card-header">
+                <div className="education-card" key={index}>
+                    <div className="education-card-header">
                         <h3>{item.title}</h3>
                     </div>
                     <ul>
                         {item.points.map((point, i) => (
                             <li key={i}>
-                                <SchoolIcon style={{ color: '#ff5823', marginRight: '10px' }} />
+                                <SchoolIcon style={{ color: '#ff5823', marginRight: '10px' , width: '2vw', height:'2vw'}} />
                                 {((item.title==="Bachelors in Technology - Mechanical Engineering" && i===0) || (i===2))?
                                 (i!==2)?
                                 <span>

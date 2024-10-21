@@ -26,7 +26,7 @@ export default function Startup() {
 
       {/* GIF Component */}
       <div className='gif-component'>
-        <img src="https://media.giphy.com/media/l4pTqyJ8XMDeJuDW8/giphy.gif" alt="Running GIF" style={{height:200,width:400,borderRadius:5}}/>
+        <img src="https://media.giphy.com/media/l4pTqyJ8XMDeJuDW8/giphy.gif" alt="Running GIF"/>
       </div>
 
       {/* Website Link */}
@@ -43,8 +43,8 @@ export default function Startup() {
       <div className='introduction'>
         <h3><u>Introduction</u></h3>
         <ul>
-          <li><FitnessCenterRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />We are a startup focused on innovation.</li>
-          <li><FitnessCenterRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Building solutions that matter.</li>
+          <li><FitnessCenterRoundedIcon style={{marginRight: '5px',color:'black'}} className='startup-fitness-icon'/>We are a startup focused on innovation.</li>
+          <li><FitnessCenterRoundedIcon style={{marginRight: '5px',color:'black'}} className='startup-fitness-icon'/>Building solutions that matter.</li>
         </ul>
       </div>
 
@@ -52,8 +52,8 @@ export default function Startup() {
       <div className='goals'>
         <h3><u>What we are trying to achieve</u></h3>
         <ul>
-          <li><FitnessCenterRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Creating meaningful impact.</li>
-          <li><FitnessCenterRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Building long-term relationships with clients.</li>
+          <li><FitnessCenterRoundedIcon style={{marginRight: '5px',color:'black'}} className='startup-fitness-icon'/>Creating meaningful impact.</li>
+          <li><FitnessCenterRoundedIcon style={{marginRight: '5px',color:'black'}} className='startup-fitness-icon'/>Building long-term relationships with clients.</li>
         </ul>
       </div>
 
@@ -61,8 +61,8 @@ export default function Startup() {
       <div className='achievements'>
         <h3><u>Achievements</u></h3>
         <ul>
-          <li><FitnessCenterRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Awarded best startup in 2023.</li>
-          <li><FitnessCenterRoundedIcon fontSize="small" style={{marginRight: '5px',color:'black'}} />Partnered with key industry players.</li>
+          <li><FitnessCenterRoundedIcon style={{marginRight: '5px',color:'black'}} className='startup-fitness-icon'/>Awarded best startup in 2023.</li>
+          <li><FitnessCenterRoundedIcon style={{marginRight: '5px',color:'black'}} className='startup-fitness-icon'/>Partnered with key industry players.</li>
         </ul>
       </div>
 

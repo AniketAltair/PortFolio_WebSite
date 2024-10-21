@@ -68,8 +68,6 @@ export default function Responsibilities () {
                       <div className="video-container">
                           <iframe
                               src="https://drive.google.com/file/d/1ABy39JVBUcCYbk_fyER6Ww1UTzSaIVfk/preview"
-                              width="400"
-                              height="400"
                               allow="autoplay"
                               title="Qkres Demo Video"
                           ></iframe>

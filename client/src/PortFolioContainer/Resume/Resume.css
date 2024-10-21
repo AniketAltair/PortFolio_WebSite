@@ -251,11 +251,13 @@
 
   }
 
+/*IPAD AIR and IPAD MINI*/
 @media only screen and (max-width: 898px) {
 
     .resume-main-card{
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
     .resume-card {
@@ -264,7 +266,8 @@
     }
 
     .resume-card-info{
-        width: 400px;
+      width: 500px;
+        height: 500px;
     }
   
     
@@ -279,11 +282,12 @@
     }
 
     .resume-card {
-      width: 300px;
+      width: 330px;
     }
   
     .resume-card-info{
-        width: 300px;
+        width: 330px;
+        height: 550px;
     }
     
   }
