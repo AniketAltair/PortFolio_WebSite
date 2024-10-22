@@ -3,7 +3,9 @@ import './Education.css';
 import SchoolIcon from '@mui/icons-material/School';
 
 export default function Education () {
-    const responsibilities = [
+    
+    // Eduaction Static Data
+    const educationData = [
         {
             title: 'Bachelors in Technology - Mechanical Engineering',
             points: [
@@ -33,7 +35,7 @@ export default function Education () {
 
     return (
         <div className="education-container">
-            {responsibilities.map((item, index) => (
+            {educationData.map((item, index) => (
                 <div className="education-card" key={index}>
                     <div className="education-card-header">
                         <h3>{item.title}</h3>

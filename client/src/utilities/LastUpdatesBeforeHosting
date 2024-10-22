@@ -1,0 +1,15 @@
+#0 Add all images,videos and pdfs in portfolio_data folder on dropbox to S3.
+   Update the Links in ImagesLinks.js with new S3 Links.
+   DropBox Link: https://www.dropbox.com/home/PortFolio_data
+
+#1 Home->Profile.js : change typewriter data if want
+#2 AboutMe.js : change About me data
+#3 WorkExperience.js : Add WorkExperience data
+#4 Startup.js : Add Startup data, logo and GIF
+#5 PiggyBank.js: Add Proj data, logo and GIF
+#6 MLProj.js: Add Proj data and GIF
+#7 WebScrapper.js: Add Proj data and GIF
+#8 ProgrammingSkills.js: Add extra skills if want and set percentages progree bar
+#9 Responsibilities.js: change data if want
+#10 Verify all Data and responsiveness once.
+

@@ -1,0 +1,6 @@
+#1 Upload Image on dropbox/S3
+#2 Copy link 
+#3 change link at end, dl=0 to raw=1 (for S3)
+#4 Add new parameter in ImageLinks 
+#5 Use new link in project files
+#6 New data also store in desktop folder 

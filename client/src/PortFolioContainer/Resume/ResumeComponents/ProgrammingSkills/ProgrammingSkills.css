@@ -4,53 +4,50 @@
     flex-wrap: wrap;
 }
 
-
 .prog-skills-img-container {
     margin: 10px 10px 0 20px;
-    width: 100px;                /* Set width to 100px */
-    height: 100px;               /* Set height to 100px */
-    overflow: hidden;            /* Hide overflow if any */
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
-    position: relative;          /* Required for positioning the progress bar */
+    width: 100px;                
+    height: 100px;              
+    overflow: hidden;            
+    transition: transform 0.3s ease; 
+    position: relative;          
 }
 
 .prog-skills-img-container:hover {
-    transform: scale(1.5);       /* Scale up by 10% on hover */
+    transform: scale(1.5);       
 }
-
-
 
 .prog-skills-progress-container {
     width: 75%;  
     margin-top: 5px; 
     margin-left: 23px; 
-    margin-bottom: 10px;            /* Full width container */
-    background-color: #f3f3f3;   /* Light background for the container */
-    border-radius: 25px;         /* Rounded corners */
-    height: 10px;                /* Set height of progress container */
-    position: relative;          /* For positioning the progress bar */
-    overflow: hidden;            /* Prevent the bar from overflowing */
+    margin-bottom: 10px;            
+    background-color: #f3f3f3;  
+    border-radius: 25px;        
+    height: 10px;                
+    position: relative;          
+    overflow: hidden;            
   }
   
   .prog-skills-progress-bar {
-    height: 10px; /* Adjust as per your design */
-    background-color: #4caf50; /* Change this color as per your design */
-    border-radius: 25px; /* Adjust for rounded corners */
+    height: 10px; 
+    background-color: #4caf50; 
+    border-radius: 25px; 
     transition: width 0.5s ease-in-out;
   }
   
   .prog-skills-img-container:hover + .prog-skills-progress-container .prog-skills-progress-bar {
-    width: 75%;                  /* Expand to 75% width on hover */
+    width: 75%;                 
   }
 
   .prog-skills-progress-text {
     position: absolute;
-    top: 50%;                  /* Vertical center */
-    left: 50%;                 /* Horizontal center */
-    transform: translate(-50%, -50%); /* Adjust position to be exactly in the middle */
-    font-size: 8px;           /* Font size of the text */
-    color: black;               /* White color for good contrast */
-    font-weight: bold;         /* Bold font for emphasis */
+    top: 50%;                
+    left: 50%;                
+    transform: translate(-50%, -50%); 
+    font-size: 8px;           
+    color: black;               
+    font-weight: bold;         
   }
 
   .nameNotVisible{
@@ -75,37 +72,33 @@
     100% { transform:  rotate(5deg); }
   }
 
-
   @media screen and (max-width: 850px) {
     .prog-skills-img-container{
       width: 85px;
       height: 85px;
     }
-    
   }
 
   @media screen and (max-width: 466px) {
-
     .prog-skills-img-container {
       margin: 10px 10px 0 20px;
-      width: 65px;                /* Set width to 100px */
-      height: 65px;               /* Set height to 100px */
-      overflow: hidden;            /* Hide overflow if any */
-      transition: transform 0.3s ease; /* Smooth transition for scaling */
-      position: relative;          /* Required for positioning the progress bar */
+      width: 65px;               
+      height: 65px;               
+      overflow: hidden;            
+      transition: transform 0.3s ease; 
+      position: relative;         
   }
   
-
     .prog-skills-progress-container {
       width: 60%;  
       margin-top: 5px; 
       margin-left: 23px; 
-      margin-bottom: 10px;            /* Full width container */
-      background-color: #f3f3f3;   /* Light background for the container */
-      border-radius: 25px;         /* Rounded corners */
-      height: 10px;                /* Set height of progress container */
-      position: relative;          /* For positioning the progress bar */
-      overflow: hidden;            /* Prevent the bar from overflowing */
+      margin-bottom: 10px;            
+      background-color: #f3f3f3;   
+      border-radius: 25px;        
+      height: 10px;               
+      position: relative;          
+      overflow: hidden;            
     }
 
     .prog-skills-skillName{
@@ -117,7 +110,6 @@
       color: green;
       animation: wobble 1s ease-in-out infinite;
     }
-
   }
   
 

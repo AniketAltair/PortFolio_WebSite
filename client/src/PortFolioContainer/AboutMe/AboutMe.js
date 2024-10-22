@@ -1,19 +1,12 @@
 import React from 'react'
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading'
-import Animations from '../../utilities/Animations';
-import ScrollService from '../../utilities/ScrollService';
 import './AboutMe.css';
+import {aboutMeImageLinks} from '../../utilities/ImageLinks'
 
 export default function AboutMe(props) {
 
-    let fadeInScreenHandler = (screen) => {
-        if(screen.fadeScreen !== props.id){
-            return;
-        }
-        Animations.animations.fadeInScreen(props.id);
-    }
-
-    const fadeInSubscription = ScrollService.currScreenFadeIn.subscribe(fadeInScreenHandler);
+    // setting image links for css
+    document.documentElement.style.setProperty('--about-me-profile-pic',`url(${aboutMeImageLinks.MyPic})`)
 
     const SCREEN_CONSTANTS = {
         description : "Full Stack Developer with Background in Java Stack Development. Profficient in Both Frontend and Backend Technologies. Always Craving to learn more. Strong Professional willing to be an asset for organization.",
@@ -55,7 +48,6 @@ export default function AboutMe(props) {
                         <div>
                             {renderHighlights()}
                         </div>
-                        
                     </div>
                 </div>
             </div>

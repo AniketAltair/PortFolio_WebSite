@@ -1,123 +1,119 @@
 import React, { useState, useEffect } from 'react';
 import './ProgrammingSkills.css';
+import {programmingImageLinks} from '../../../../utilities/ImageLinks'
 
 export default function ProgrammingSkills() {
 
-  const [isSelected,setIsSelected] = useState(false);
-
+  // ProgrammingSkills Static Data
   const [programmingSkills, setProgrammingSkills] = useState([
     {
       name:"Java",
-      imageLink: "https://i.pinimg.com/736x/e9/94/61/e99461fdd5b3db8bdb3081d8acf5e524.jpg",
-      percentProgress: "80%"
+      imageLink: programmingImageLinks.java,
+      percentProgress: "8%"
     },
     {
       name:"React",
-      imageLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s",
+      imageLink: programmingImageLinks.react,
       percentProgress: "80%"
     },
     {
       name:"Android",
-      imageLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDHvnyoyWI-FlgTfOWRoJjazD3ke1Q6hOgfQ&s",
+      imageLink: programmingImageLinks.android,
       percentProgress: "80%"
     },
     {
       name:"Spring",
-      imageLink: "https://cdn.worldvectorlogo.com/logos/spring-3.svg",
+      imageLink: programmingImageLinks.spring,
       percentProgress: "20%"
     },
     {
       name:"Nodejs",
-      imageLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBwzWqFVu66ck-2u_nDBgLTZbR3cNjpUCbWg&s",
+      imageLink: programmingImageLinks.nodejs,
       percentProgress: "20%"
     },
     {
       name:"Javascript",
-      imageLink: "https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png",
+      imageLink:programmingImageLinks.javascript,
       percentProgress: "20%"
     },
     {
       name:"HTML",
-      imageLink: "https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png",
+      imageLink: programmingImageLinks.html,
       percentProgress: "20%"
     },
     {
       name:"CSS",
-      imageLink: "https://cdn.iconscout.com/icon/free/png-256/free-css3-logo-icon-download-in-svg-png-gif-file-formats--css-programming-langugae-language-pack-logos-icons-1175237.png?f=webp&w=256",
+      imageLink: programmingImageLinks.css,
       percentProgress: "20%"
     },
     {
       name:"Python",
-      imageLink: "https://cdn.iconscout.com/icon/free/png-256/free-python-logo-icon-download-in-svg-png-gif-file-formats--programming-language-logos-icons-1720083.png?f=webp",
+      imageLink: programmingImageLinks.python,
       percentProgress: "20%"
     },
     {
       name:"Tensorflow",
-      imageLink: "https://user-images.githubusercontent.com/40668801/42043955-fbb838a2-7af7-11e8-9795-7f890e871d13.png",
+      imageLink: programmingImageLinks.tensorflow,
       percentProgress: "50%"
     },
     {
       name:"AWS_EC2",
-      imageLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqX9ilNtkRJvMeancrBjulZLftBdDkc3rImQ&s",
+      imageLink: programmingImageLinks.aws_ec2,
       percentProgress: "20%"
     },
     {
       name:"AWS_S3",
-      imageLink: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Amazon-S3-Logo.svg",
+      imageLink: programmingImageLinks.aws_s3,
       percentProgress: "100%"
     },
     {
       name:"Jenkins",
-      imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png",
+      imageLink: programmingImageLinks.jenkins,
       percentProgress: "20%"
     },
     {
       name:"Docker",
-      imageLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLQKd_MRed_mZQlgrzQuUXVA3P39ssOVX8_g&s",
+      imageLink: programmingImageLinks.docker,
       percentProgress: "80%"
     },
     {
       name:"Kubernetes",
-      imageLink: "https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg",
+      imageLink: programmingImageLinks.kubernetes,
       percentProgress: "20%"
     },
     {
       name:"Redis",
-      imageLink: "https://www.stackery.io/assets/images/posts/redis-cache-cluster-support/featured.svg",
+      imageLink: programmingImageLinks.redis,
       percentProgress: "60%"
     },
     {
       name: "Kafka",
-      imageLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqOKEVxLEPXLVAhlOcrfBnIOTzoCU23BwUMA&s",
+      imageLink: programmingImageLinks.kafka,
       percentProgress: "65%"
     },
     {
       name:"Elastic",
-      imageLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2WpSN5QJweI6GSxp0ayjednCTsaFtivLm7Q&s",
+      imageLink: programmingImageLinks.elastic,
       percentProgress: "20%"
     },
     {
       name:"NginX",
-      imageLink: "https://cdn.iconscout.com/icon/free/png-256/free-nginx-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945048.png",
+      imageLink: programmingImageLinks.nginx,
       percentProgress: "100%"
     },
     {
       name:"Git",
-      imageLink: "https://sites.duke.edu/memscapstone/files/2021/11/git_logo.png",
+      imageLink: programmingImageLinks.git,
       percentProgress: "90%"
     }
 
   ]);
 
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
   useEffect(() => {
     const bars = document.querySelectorAll('.prog-skills-progress-bar');
-    
     bars.forEach(bar => {
       bar.style.width = '0%'; 
     });
-
     setTimeout(() => {
       programmingSkills.forEach((item, index) => {
         if (bars[index]) {
@@ -128,8 +124,6 @@ export default function ProgrammingSkills() {
   }, [programmingSkills]);
 
   const handleMouseOver = (index) => {
-    setIsSelected(true);
-    setHoveredIndex(index);
     const bar = document.querySelectorAll('.prog-skills-progress-bar')[index];
     if (bar) {
       bar.style.width = '0%';
@@ -140,11 +134,9 @@ export default function ProgrammingSkills() {
   };
 
   const handleMouseOut = (index) => {
-    setIsSelected(false);
-    setHoveredIndex(null);
     const bar = document.querySelectorAll('.prog-skills-progress-bar')[index];
     if (bar) {
-      bar.style.width = programmingSkills[index].percentProgress; // Reset to original percentage on mouse out
+      bar.style.width = programmingSkills[index].percentProgress;
     }
   };
 
@@ -156,7 +148,6 @@ export default function ProgrammingSkills() {
             className='prog-skills-img-container' 
             onMouseOver={() => handleMouseOver(index)}
             onMouseOut={() => handleMouseOut(index)}
-                  
           >
             <img 
               src={item.imageLink} 
@@ -169,8 +160,8 @@ export default function ProgrammingSkills() {
             <div 
               className="prog-skills-progress-bar" 
               style={{
-                width: '0%', // Start with 0% width
-                transition: 'width 0.5s ease-in-out' // Add smooth transition
+                width: '0%',
+                transition: 'width 0.5s ease-in-out'
               }}
             ></div>
             <div className="prog-skills-progress-text">

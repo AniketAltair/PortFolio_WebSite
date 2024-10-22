@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { GET_SCREEN_INDEX, TOTAL_SCREENS } from '../../../utilities/commonUtils';
-import ScrollService from '../../../utilities/ScrollService';
+import { TOTAL_SCREENS } from '../../../utilities/commonUtils';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
@@ -9,16 +8,6 @@ export default function Header() {
 
     const[selectedScreen,setSelectedScreen] = useState(0);
     const[showHeaderOptions,setShowHeaderOptions] = useState(false);
-
-    const updateCurrentScreen = (currentScreen) =>{
-        if(!currentScreen || !currentScreen.screenInView)
-            return;
-        let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
-        if(screenIndex<0)
-            return;
-    }
-
-    let currentScreenSubscription = ScrollService.currScreenBroadCaster.subscribe(updateCurrentScreen);
 
     const getHeaderOptions = () =>{
         return(
@@ -42,6 +31,7 @@ export default function Header() {
         return classes;
     }
 
+    // Function responsible for scrolling to view
     const switchScreen = (index,screen) =>{
         let screenComponent = document.getElementById(screen.screen_name);
         if(!screenComponent){

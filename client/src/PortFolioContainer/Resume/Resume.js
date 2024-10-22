@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
-import Animations from "../../utilities/Animations";
 import "./Resume.css";
 import Education from "./ResumeComponents/Education/Education";
 import WorkExperience from "./ResumeComponents/WorkExperience/WorkExperience";
@@ -14,8 +12,6 @@ import Responsibilities from "./ResumeComponents/Responsibilities/Responsibiliti
 export default function Resume (props){
 
     const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
-    const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
-
     const [showComponents,setShowComponents] = useState({
         showEducation:true,
         showWorkExperience:false,
@@ -25,7 +21,6 @@ export default function Resume (props){
         showResponsibilities:false,
         showInterestsAndHobbies:false
     });
-
     const [componentIndex,setComponentIndex] = useState({
         showEducation:0,
         showWorkExperience:1,
@@ -36,22 +31,6 @@ export default function Resume (props){
         showInterestsAndHobbies:6
     });
   
-  let fadeInScreenHandler = (screen) => {
-    if(screen.fadeScreen !== props.id){
-        return;
-    }
-    Animations.animations.fadeInScreen(props.id);
-    }
-
-    const fadeInSubscription = ScrollService.currScreenFadeIn.subscribe(fadeInScreenHandler);
-
-  useEffect(() => {
-    return () => {
-      /* UNSUBSCRIBE THE SUBSCRIPTIONS */
-      fadeInSubscription.unsubscribe();
-    };
-  }, [fadeInSubscription]);
-
   const resumeBullets = [
     { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
@@ -62,37 +41,29 @@ export default function Resume (props){
     { label: "Interests & Hobbies", logoSrc: "interests.svg" }
   ];
 
+  // Function responsible when we select resume component on left
   const handleCarousal = (index) => {
-
+    const scrollableDiv = document.querySelector('.resume-card-info');
+      if (scrollableDiv) {
+        scrollableDiv.scrollTop = 0;
+      }
     for(let key in showComponents){
         showComponents[key]=false;
         if(index===componentIndex[key]){
             showComponents[key]=true;
         }
     }
-   
-
-    let offsetHeight = 360;
-
-    let newCarousalOffset = {
-      style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
-    };
-
-    setCarousalOffsetStyle(newCarousalOffset);
     setSelectedBulletIndex(index);
   };
-
 
   const getBullets = () => {
     return resumeBullets.map((bullet, index) => (
       <div
       onClick={() => handleCarousal(index)}
-        
         className={
           index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"
         }
-        key={index}
-      >
+        key={index}>
         <img
           className="bullet-logo"
           src={require(`../../assets/Resume/${bullet.logoSrc}`)}
@@ -102,8 +73,6 @@ export default function Resume (props){
       </div>
     ));
   };
-
-  
 
   return (
     <div className="resume-container screen-container" id={props.id || ""}>
@@ -117,7 +86,6 @@ export default function Resume (props){
                         <div className="bullets">{getBullets()}</div>
                     </div>
                 </div>
-            {/* <div className="resume-bullet-details">{getResumeScreens()}</div> */}
             </div>
             <div className="resume-card-info">
                 <div className="scrollable-div">

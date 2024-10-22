@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
 import LabelImportantRoundedIcon from '@mui/icons-material/LabelImportantRounded';
 import "./WebScrapper.css"
+import {webScrapperImageLinks} from '../../../../../utilities/ImageLinks'
+
 
 export default function WebScrapper() {
   const [title, setTitle] = useState(["W", "E", "B", "S","C", "R", "A", "P", "P", "E","R"]);
-  const [role, setRole] = useState("[Founder]");
 
   const titleComponent = () => {
     return (
@@ -18,6 +19,49 @@ export default function WebScrapper() {
     );
   };
 
+  // WebScrapper Static Data
+  const webScrapperData = [
+    {
+      key:"introduction",
+      className:"introduction-projects-3",
+      heading:"Introduction",
+      points:[
+        "We are a startup focused on innovation.",
+        "Building solutions that matter."
+      ]
+    },
+    {
+      key:"features",
+      className:"features-projects-3",
+      heading:"Features",
+      points:[
+        "Creating meaningful impact.",
+        "Building long-term relationships with clients."
+      ]
+    }
+  ]
+
+  const bulletComponents = () => {
+    return(
+      <>
+      {
+        webScrapperData.map((item)=>(
+          <div className={item.className}>
+            <h3><u>{item.heading}</u></h3>
+            <ul>
+              {
+                item.points.map((point)=>(
+                  <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='webscrapper-bullet'/>{point}</li>
+                ))
+              }
+            </ul>
+          </div>
+        ))
+      }
+      </>
+    )
+  }
+
   return (
     <div className='container-projects-3'>
       <div className='header-projects-3'>
@@ -27,39 +71,17 @@ export default function WebScrapper() {
           </div>
         </Link>
         {titleComponent()}
-        
       </div>
-
-      {/* GIF Component */}
       <div className='gif-component-projects-3'>
-        <img src="https://miro.medium.com/v2/resize:fit:1024/1*nHfayfdmxAApbg84iMrJqQ.gif" alt="Running GIF" />
+        <video autoPlay loop muted>
+          <source src={webScrapperImageLinks.gif} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
-
-      {/* LinkedIn Link */}
       <div className='linkedin-link-projects-3'>
         <u>Github Link:</u> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{color:"red"}}>https://linkedin.com</a>
       </div>
-
-      {/* Introduction */}
-      <div className='introduction-projects-3'>
-        <h3><u>Introduction</u></h3>
-        <ul>
-          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='webscrapper-bullet'/>We are a startup focused on innovation.</li>
-          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='webscrapper-bullet'/>Building solutions that matter.</li>
-        </ul>
-      </div>
-
-      {/* What we are trying to achieve */}
-      <div className='features-projects-3'>
-        <h3><u>Features</u></h3>
-        <ul>
-          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='webscrapper-bullet'/>Creating meaningful impact.</li>
-          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='webscrapper-bullet'/>Building long-term relationships with clients.</li>
-        </ul>
-      </div>
-
-      {/* Back button to go to MLProject */}
-      
+      {bulletComponents()}
     </div>
   );
 }

@@ -28,7 +28,7 @@
 .header-img-projects-1 {
     width: 70px;
     height: 70px;
-    background-image: url('logo.jpg');
+    background-image: var(--piggbank-logo);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -88,13 +88,13 @@
  
 
 .gif-component-projects-1 {
-    margin: 10px 0 0 80px;
+    margin: 10px 0 0 110px;
     border-radius: 5px;
 }
 
-.gif-component-projects-1 img{
-    width: 500px;
-    height: 300px;
+.gif-component-projects-1 video{
+    width: 400px;
+    height: 200px;
 }
 
 .next-button-project-1{
@@ -103,14 +103,14 @@
 
 .website-link-projects-1{
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 160px;
     font-size: 15px;
     color: black;
 }
 .linkedin-link-projects-1 {
     color: black;
     font-size: 15px;
-    margin-left: 100px;
+    margin-left: 160px;
 }
 
 a{
@@ -232,7 +232,7 @@ h3{
     .header-img-projects-1 {
         width: 50px;
         height: 50px;
-        background-image: url('logo.jpg');
+        background-image: var(--piggbank-logo);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -254,7 +254,7 @@ h3{
         border-radius: 10px;
     }
 
-    .gif-component-projects-1 img{
+    .gif-component-projects-1 video{
         width: 400px;
         height: 200px;
     }
@@ -361,7 +361,7 @@ h3{
     .header-img-projects-1 {
         width: 50px;
         height: 50px;
-        background-image: url('logo.jpg');
+        background-image: var(--piggbank-logo);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -382,7 +382,7 @@ h3{
         border-radius: 10px;
     }
 
-    .gif-component-projects-1 img{
+    .gif-component-projects-1 video{
         width: 300px;
         height: 200px;
     }

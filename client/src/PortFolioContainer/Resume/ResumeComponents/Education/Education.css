@@ -5,6 +5,7 @@
   justify-content: space-around;
   gap: 20px;
   padding: 20px;
+  
 }
 
 .education-card {
@@ -62,27 +63,25 @@ li {
   text-align: center;
 }
 
-
 .education-bold{
   color: #ff5823;
 }
 
-/* Pulsing animation for the orange text in strong elements */
 @keyframes pulse {
   0% {
     font-size: 1em;
   }
   50% {
-    font-size: 1.2em; /* Increase font size at the midpoint */
+    font-size: 1.2em; 
   }
   100% {
-    font-size: 1em; /* Return to original size */
+    font-size: 1em; 
   }
 }
 
 .education-bold {
-  color: #ff5823; /* Orange color */
-  animation: pulse 3s infinite; /* Apply the pulsing animation */
+  color: #ff5823; 
+  animation: pulse 3s infinite; 
 }
 
 @media only screen and (max-width:850px) {
@@ -95,7 +94,6 @@ li {
     transition: transform 0.3s ease;
     border: 2px solid black;
   }
-
 
   .education-card h3 {
     margin: 0;
@@ -133,7 +131,6 @@ li {
     border: 2px solid black;
   }
 
-
   .education-card h3 {
     margin: 0;
     font-size: 12px;
@@ -153,17 +150,15 @@ li {
       font-size: 0.8em;
     }
     50% {
-      font-size: 1em; /* Increase font size at the midpoint */
+      font-size: 1em;
     }
     100% {
-      font-size: 0.8em; /* Return to original size */
+      font-size: 0.8em; 
     }
   }
   
   .education-bold {
-    color: #ff5823; /* Orange color */
-    animation: pulse 3s infinite; /* Apply the pulsing animation */
+    color: #ff5823; 
+    animation: pulse 3s infinite; 
   }
-  
-
 }

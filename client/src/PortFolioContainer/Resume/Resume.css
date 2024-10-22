@@ -16,8 +16,6 @@
     height: 500px;
     width: 270px;
     box-shadow: 0 0px 20px -2px #1f2235;
-    
-    /* margin: 80px 0; */
   }
 
   .resume-card-info {
@@ -27,14 +25,12 @@
     box-shadow: 0 0px 20px -2px #1f2235;
     margin: 0 0 0 5px;
     overflow-y: auto;
-    /* margin: 80px 0; */
   }
   
   .resume-bullets {
     box-shadow: 15px 0 9px -15px #1f2235;
     height: 100%;
     width: 100%;
-   
   }
   
   .resume-bullet-details {
@@ -59,7 +55,6 @@
   
   .bullet-container {
     display: flex;
-    
     height: 100%;
     width: 100%;
     position: relative;
@@ -202,7 +197,6 @@
     color: #ff5823;
   }
   
-  /* IPAD PRO RESPONSIVENESS */
   @media only screen and (max-width: 1110px) {
     .resume-card {
       width: 200px;
@@ -213,7 +207,6 @@
     }
   }
   
-  /* IPAD RESPONSIVENESS */
   @media only screen and (max-width: 1023px) {
     .resume-content {
       display: flex;
@@ -248,12 +241,9 @@
     .selected-bullet {
       width: 100%;
     }
-
   }
 
-/*IPAD AIR and IPAD MINI*/
 @media only screen and (max-width: 898px) {
-
     .resume-main-card{
         display: flex;
         flex-direction: row;
@@ -269,13 +259,10 @@
       width: 500px;
         height: 500px;
     }
-  
-    
   }
 
 
 @media only screen and (max-width: 466px) {
-
     .resume-main-card{
         display: flex;
         flex-direction: column;
@@ -289,5 +276,4 @@
         width: 330px;
         height: 550px;
     }
-    
   }

@@ -11,6 +11,8 @@ router.post("/contact", (req, res) => {
     return res.json({ msg: "Please Fill All The Fields!" });
   }
 
+  // Nodemailer send email starts
+
   let smtpTransporter = nodemailer.createTransport({
     service: "Gmail",
     port: 465,

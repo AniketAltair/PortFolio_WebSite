@@ -25,17 +25,6 @@
     margin-top: 22px;
 }
 
-.header-img-projects-3 {
-    width: 70px;
-    height: 70px;
-    background-image: url('logo.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 20px;
-    animation: rotate-left-right 0.5s infinite;
-}
-
 @keyframes rotate-left-right {
     0% {
         transform: rotate(-5deg);
@@ -101,14 +90,14 @@
  
 
 .gif-component-projects-3 {
-    margin: 10px 0 0 80px;
+    margin: 10px 0 0 110px;
     border-radius: 50%;
     
 }
 
-.gif-component-projects-3 img{
-    width: 500px;
-    height: 300px;
+.gif-component-projects-3 video{
+    width: 400px;
+    height: 200px;
 }
 
 .next-button-project-3{
@@ -119,13 +108,13 @@
     margin-top: 10px;
     font-size: 15px;
     color: black;
-    margin-left: 100px;
+    margin-left: 160px;
 }
 .linkedin-link-projects-3 {
     color: black;
     font-size: 15px;
     margin-top: 5px;
-    margin-left: 100px;
+    margin-left: 160px;
 }
 
 a{
@@ -243,19 +232,6 @@ h3{
         margin-left: 20px;
     }
 
-    .header-img-projects-3 {
-        width: 50px;
-        height: 50px;
-        background-image: url('logo.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-right: 10px;
-        margin-top: 2px;
-        animation: rotate-left-right 0.5s infinite;
-    }
-    
-
     .header-title-projects-3 {
         font-size: 25px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -269,7 +245,7 @@ h3{
         border-radius: 10px;
     }
 
-    .gif-component-projects-3 img{
+    .gif-component-projects-3 video{
         width: 400px;
         height: 200px;
     }
@@ -398,7 +374,7 @@ h3{
         border-radius: 10px;
     }
 
-    .gif-component-projects-3 img{
+    .gif-component-projects-3 video{
         width: 300px;
         height: 200px;
     }

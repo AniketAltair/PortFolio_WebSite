@@ -20,7 +20,7 @@
 
 .about-me-profile{
     width: 50%;
-    background-image: url('../../assets/AboutMe/MyPic.jpg');
+    background-image: var(--about-me-profile-pic);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -71,9 +71,7 @@
 }
 
 @media only screen and (max-width:898px) {
-    /* .about-me-profile{
-        display: none;
-    } */
+    
     .about-me-details{
         width: 100%;
     }
@@ -90,13 +88,12 @@
 
     .about-me-profile{
         width: 50%;
-        background-image: url('../../assets/AboutMe/MyPic.jpg');
+        background-image: var(--about-me-profile-pic);
         
     }
 
     .about-me-details {
-        position: relative; /* Required for positioning the pseudo-element */
-        /* Other styles for .about-me-details */
+        position: relative; 
     }
     
     .about-me-details::before {
@@ -106,11 +103,11 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('../../assets/AboutMe/MyPic.jpg');
+        background-image: var(--about-me-profile-pic);
         background-size: cover;
         background-position: center;
-        opacity: 0.2; /* 20% opacity */
-        z-index: -1; /* Ensure the image is behind the content */
+        opacity: 0.2; 
+        z-index: -1; 
     }
 
    

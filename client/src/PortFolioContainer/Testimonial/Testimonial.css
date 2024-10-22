@@ -1,6 +1,6 @@
 .testimonial-section {
     padding: 80px 0;
-    background-image: url("./bg-1.jpg");
+    background-image: var(--testimonial-bg);
     background-position: center;
     background-attachment: fixed;
     position: relative;
@@ -36,11 +36,11 @@
 
 .testimonial-section .testi-item {
     background-color: white;
-    border-radius: 30px; /* Rounded corners */
-    padding: 20px; /* Padding inside the card */
-    height: 250px; /* Automatically adjust height */
-    width: 450px; /* Increase card width */
-    margin: 20px auto; /* Space between cards and center them */
+    border-radius: 30px; 
+    padding: 20px; 
+    height: 250px; 
+    width: 450px; 
+    margin: 20px auto; 
     
 }
 
@@ -50,7 +50,7 @@
     font-weight: 400;
     margin: 0 0 10px;
     font-style: italic;
-    padding: 0 10px; /* Add padding to prevent text overflow */
+    padding: 0 10px; 
 }
 
 .testimonial-section .testi-item p .fa-quote-left {
@@ -65,7 +65,7 @@
 
 .testimonial-section .testi-comment .stars {
     margin: 0 0 20px;
-    text-align: center; /* Center-align the stars */
+    text-align: center; 
 }
 
 .testimonial-section .testi-comment .stars li {
@@ -74,14 +74,14 @@
 }
 
 .testimonial-section .testi-comment .stars li i {
-    font-size: 18px; /* Increased star size */
+    font-size: 18px;
     color: tomato;
 }
 
 .testimonial-section .client-info {
     position: relative;
     padding-left: 80px;
-    padding-top: 20px; /* Increased padding for better spacing */
+    padding-top: 20px; 
     min-height: 60px;
 }
 
@@ -124,17 +124,14 @@
 }
 
 @media only screen and (max-width:1110px) {
-  
     .testimonial-section .testi-item {
         background-color: white;
-        border-radius: 30px; /* Rounded corners */
-        padding: 20px; /* Padding inside the card */
-        height: 300px; /* Automatically adjust height */
-        width: 300px; /* Increase card width */
-        margin: 20px auto; /* Space between cards and center them */
-        
+        border-radius: 30px; 
+        padding: 20px; 
+        height: 300px; 
+        width: 300px; 
+        margin: 20px auto;   
     }
-
 }
 
 

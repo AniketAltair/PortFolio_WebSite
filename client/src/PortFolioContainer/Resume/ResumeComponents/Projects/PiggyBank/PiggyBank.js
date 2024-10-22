@@ -3,11 +3,15 @@ import './PiggyBank.css';
 import { Link } from 'react-router-dom';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import LabelImportantRoundedIcon from '@mui/icons-material/LabelImportantRounded';
-
+import { interval } from 'rxjs';
+import {piggyBankImageLinks} from '../../../../../utilities/ImageLinks'
 
 export default function PiggyBank() {
+
+  // image links from ImageLinks for css
+  document.documentElement.style.setProperty('--piggbank-logo',`url(${piggyBankImageLinks.logo})`);
+
   const [title, setTitle] = useState(["P", "I", "G", "G", "Y", "B", "A", "N", "K"]);
-  const [role, setRole] = useState("[Founder]");
 
   const titleComponent = () => {
     return (
@@ -18,6 +22,49 @@ export default function PiggyBank() {
       </div>
     );
   };
+
+  // PiggyBank Static Data
+  const piggyBankData = [
+    {
+      key:"introduction",
+      className:"introduction-projects-1",
+      heading:"Introduction",
+      points:[
+        "We are a startup focused on innovation.",
+        "Building solutions that matter."
+      ]
+    },
+    {
+      key:"features",
+      className:"features-projects-1",
+      heading:"Features",
+      points:[
+        "Creating meaningful impact.",
+        "Building long-term relationships with clients."
+      ]
+    }
+  ]
+
+  const bulletComponents = () => {
+    return(
+      <>
+      {
+        piggyBankData.map((item)=>(
+          <div className={item.className}>
+            <h3><u>{item.heading}</u></h3>
+            <ul>
+              {
+                item.points.map((point)=>(
+                  <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='piggybank-bullet' />{point}</li>
+                ))
+              }
+            </ul>
+          </div>
+        ))
+      }
+      </>
+    )
+  }
 
   return (
     <div className='container-projects-1'>
@@ -30,41 +77,19 @@ export default function PiggyBank() {
           </div>
         </Link>
       </div>
-
-      {/* GIF Component */}
       <div className='gif-component-projects-1'>
-        <img src="https://media.giphy.com/media/l4pTqyJ8XMDeJuDW8/giphy.gif" alt="Running GIF"/>
+        <video autoPlay loop muted>
+          <source src={piggyBankImageLinks.gif} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
-
-      {/* Website Link */}
       <div className='website-link-projects-1'>
         <u>Playstore Link:</u> <a href="https://example.com" target="_blank" rel="noopener noreferrer" style={{color:"red"}}>https://example.com</a>
       </div>
-
-      {/* LinkedIn Link */}
       <div className='linkedin-link-projects-1'>
         <u>Github Link:</u> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{color:"red"}}>https://linkedin.com</a>
       </div>
-
-      {/* Introduction */}
-      <div className='introduction-projects-1'>
-        <h3><u>Introduction</u></h3>
-        <ul>
-          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='piggybank-bullet' />We are a startup focused on innovation.</li>
-          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='piggybank-bullet' />Building solutions that matter.</li>
-        </ul>
-      </div>
-
-      {/* What we are trying to achieve */}
-      <div className='features-projects-1'>
-        <h3><u>Features</u></h3>
-        <ul>
-          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='piggybank-bullet' />Creating meaningful impact.</li>
-          <li><LabelImportantRoundedIcon style={{marginRight: '5px',color:'black'}} className='piggybank-bullet' />Building long-term relationships with clients.</li>
-        </ul>
-      </div>
-
-     
+      {bulletComponents()}
     </div>
   );
 }

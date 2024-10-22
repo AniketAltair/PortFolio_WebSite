@@ -67,7 +67,7 @@
 .profile-picture-background{
     height: 92%;
     width: 92%;
-    background-image: url("../../../assets/Home/profile.jpg");
+    background-image: var(--profile-bg-image);
     background-size: cover;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -89,10 +89,7 @@
     transform: scale(1.5);
 }
 
-/* Responsiveness*/
-
 @media screen and (max-width: 1110px) {
-
     .profile-picture{
         margin: 0 0px 0 80px;
     }
@@ -113,7 +110,6 @@
 }
 
 @media screen and (max-width: 910px) {
-
     .profile-picture{
         width: 320px;
         height: 320px;
@@ -123,7 +119,6 @@
 }
 
 @media screen and (max-width: 810px) {
-
     .profile-picture{
         margin: 0 !important;
     }
@@ -154,7 +149,6 @@
 
 
 @media screen and (max-width: 375px){
-
     .profile-picture{
         height: 275px;
         width: 275px;
