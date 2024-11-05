@@ -30,7 +30,7 @@ export const aboutMeImageLinks = {
             "https://www.dropbox.com/scl/fi/lms7wmj7jppsgju7fu7wc/fitflix.jpg?rlkey=emtq8ofnbp97biaf20k58pgs7&st=13xlgobe&raw=1",
             "https://www.dropbox.com/scl/fi/4sjr8202qdta38yue3d3c/fitness_zone.jpg?rlkey=yjssynz017la6xqictn8kedf4&st=dx9d4ida&raw=1"
         ],
-        logo:"https://www.dropbox.com/scl/fi/iira1r7uvn1zy8ckhoah6/Logo.png?rlkey=cqz0jk8uxtlgauocb9qc5mk0r&st=pzezpusv&raw=1",
+        logo:"https://www.dropbox.com/scl/fi/lqd0rofbw0vpyhun2kv69/Logo.png?rlkey=r6f3bzt3j9qusvy4pqa2as4tv&st=yo6gyfr2&raw=1",
         gif:"https://www.dropbox.com/scl/fi/wh9kz6ck2ia60chv3u63g/VID-20240924-WA0026.mp4?rlkey=3f4tcg6a829ddcsuqtawnrnp6&st=rzgm0mzm&raw=1"
     };
 
