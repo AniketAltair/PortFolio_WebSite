@@ -100,6 +100,7 @@
 .gif-component-projects-2 video{
     width: 400px;
     height: 200px;
+    border-radius: 1;
 }
 
 .prev-button-project-2{

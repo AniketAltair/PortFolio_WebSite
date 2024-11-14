@@ -35,6 +35,14 @@ export default function Responsibilities () {
             ]
         },
         {
+            title: 'WeightLifting Team Member',
+            logo: responsibilitiesImageLinks.weightLifting,
+            points: [
+                'Was Part of Hostel Team in WeightLifting in my First Year.',
+                'Secured second rank in my weight class (under 75 kg)'
+            ]
+        },
+        {
             title: 'Brainly',
             logo: responsibilitiesImageLinks.brainly,
             points: [

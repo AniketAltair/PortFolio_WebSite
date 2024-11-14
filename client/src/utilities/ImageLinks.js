@@ -38,12 +38,12 @@ export const aboutMeImageLinks = {
         // PiggyBank images
         export const piggyBankImageLinks = {
             logo:"https://www.dropbox.com/scl/fi/lgjm0gj8otxwldfqdsoga/logo.jpg?rlkey=3qobe6pqe2r4e80dv556snmjx&st=oj09cy0a&raw=1",
-            gif:"https://www.dropbox.com/scl/fi/zhlb2nuuhxu7jxy39hzzz/VID-20240924-WA0026.mp4?rlkey=lkny3oh8ktx5ivydhnqcsx2jq&st=u45vslal&raw=1"
+            gif:"https://www.dropbox.com/scl/fi/xm9ame8zing7jkhpczj1h/LoadingGif_MP4.mp4?rlkey=5qx5i10xvf477w3irdmsdw4tl&st=x5sngp64&raw=1"
         };
 
         // MLProj images
         export const mLProjImageLinks = {
-            gif:"https://www.dropbox.com/scl/fi/8jq81jyhfhl7hlfxluosf/VID-20240924-WA0026.mp4?rlkey=pkk81d5w4un7u92a0u0wsv48f&st=12mrn0j1&raw=1"
+            gif:"https://www.dropbox.com/scl/fi/97fprcgm6t8jptrt5hggt/WeightLiftingLoadingMP4.mp4?rlkey=1498cx8ys3wf92m80gh6d1zcz&st=4xia14zh&raw=1"
         };
 
         // WebScrapper images
@@ -83,7 +83,8 @@ export const responsibilitiesImageLinks = {
     noteshare: "https://www.dropbox.com/scl/fi/kwaw6cobsg819sprdyf29/NoteShare.png?rlkey=2dz81jts14o6bgtsndfpn7bfw&st=l2njrwol&raw=1",
     shaastra: "https://www.dropbox.com/scl/fi/19z3rsj0domz0hp9t5v94/shaastra.png?rlkey=tg6xqmzcmww32bb5yyzsgngco&st=s1y3jg35&raw=1",
     brainly: "https://www.dropbox.com/scl/fi/tnq6nhbtqvfag223i2n7g/brainly.png?rlkey=11fs0ksvwxxydp7fky7ukdy8u&st=ofrxk2sg&raw=1",
-    dexter: "https://www.dropbox.com/scl/fi/vrarubajc57961vf7mfhw/Dexter.png?rlkey=xudypo2di9n9k8r1qyeogg2mc&st=b99xo8dw&raw=1"
+    dexter: "https://www.dropbox.com/scl/fi/vrarubajc57961vf7mfhw/Dexter.png?rlkey=xudypo2di9n9k8r1qyeogg2mc&st=b99xo8dw&raw=1",
+    weightLifting:"https://www.dropbox.com/scl/fi/z1kkpnkr12jjrk0kufc07/weightLifting.png?rlkey=qvk93ico7e2a5w0hz9oluw7mc&st=44neadfh&raw=1"
 };
 
 // Interests and Hobbies
